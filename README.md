@@ -1,5 +1,5 @@
-# Email-Automation-Convert-Attachments-To-XLSX
-# 📩 Email Attachment Converter
+# 📩 Email-Automation-Convert-Attachments-To-XLSX
+
 
 **Automate your email workflow** — This Python script connects to your Gmail inbox via IMAP, searches for emails with attachments (CSV, HTML tables, or XLS), converts them into `.xlsx` format, and sends a reply email with the converted file.
 
