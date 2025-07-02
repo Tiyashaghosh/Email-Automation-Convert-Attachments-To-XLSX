@@ -14,7 +14,7 @@ my_email = os.getenv('EMAIL')            #Load the email it will read mails from
 my_password = os.getenv('APP_PASSWORD')  #Load the app password
 email_server = "imap.gmail.com"          #the server you want to connect to
 
-download_folder = r"C:\Users\Tiyasha Ghosh\OneDrive\Documents\Files_Downloaded"
+download_folder = r"your download folder path"
 
 #Define a function to connect to the server
 def connect():
@@ -29,7 +29,7 @@ def connect():
 
 #Function to search the required email ids
 def search_emails(imap):
-    _,mail_ids = imap.search(None,'FROM "tiyashag25@gmail.com" SINCE "01-Jul-2025"')
+    _,mail_ids = imap.search(None,'FROM "email id you want to read from" SINCE "01-Jul-2025"')
     return [mail_id.decode() for mail_id in mail_ids[0].split()]
 
 #Function to save email attachments in their original format
